@@ -32,7 +32,7 @@
                 .then(trx.commit)
                 .catch(trx.rollback)
         })
-        .catch(err => res.status(400).json('Email already exists :('))
+        .catch(err => res.status(400).json('Unable to register'))
 }
 
 module.exports = {
